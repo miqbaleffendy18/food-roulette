@@ -1,0 +1,88 @@
+[
+    {
+        "name": "Black Romantic",
+        "tags": [
+            "nasi goreng",
+            "indomie",
+            "indonesian",
+            "traditional",
+            "nasi kebuli",
+            "sop buntut"
+        ]
+    },
+    {
+        "name": "Bakmie Ganyang",
+        "tags": [
+            "bakmie",
+            "noodles",
+            "chinese-style",
+            "japanese",
+            "katsudon",
+            "korean-sauce"
+        ]
+    },
+    {
+        "name": "Ayam Cola (Legendary Stall)",
+        "tags": [
+            "fried chicken",
+            "unique",
+            "sweet-savory",
+            "indonesian",
+            "student-favorite"
+        ]
+    },
+    {
+        "name": "Warung Ica (Pujasera)",
+        "tags": [
+            "sop iga",
+            "indonesian",
+            "comfort food",
+            "budget-friendly"
+        ]
+    },
+    {
+        "name": "Warung Triya",
+        "tags": [
+            "nasi bakar",
+            "beef lada hitam",
+            "indonesian",
+            "street food"
+        ]
+    },
+    {
+        "name": "Kopi Gow",
+        "tags": [
+            "coffee",
+            "drinks",
+            "cafe",
+            "beverages"
+        ]
+    },
+    {
+        "name": "Ganesha Mocktail",
+        "tags": [
+            "mocktails",
+            "beverages",
+            "refreshing",
+            "street-side"
+        ]
+    },
+    {
+        "name": "Nasi Tutug Oncom (Various Stalls)",
+        "tags": [
+            "sundanese",
+            "traditional",
+            "oncom",
+            "indonesian"
+        ]
+    },
+    {
+        "name": "Sate Maranggi Gelap Nyawang",
+        "tags": [
+            "sate",
+            "grilled meat",
+            "traditional",
+            "indonesian"
+        ]
+    }
+]

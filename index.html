@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Food Roulette — Can't decide where to eat? Let fate decide! Spin the roulette to randomly pick a restaurant from your curated list.">
+  <title>Food Roulette 🎰</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- ====== Nav ====== -->
+    <nav class="nav">
+      <div class="nav__brand">
+        <span>🎰</span> Food Roulette
+      </div>
+      <div class="nav__tabs">
+        <button class="nav__tab active" data-view="roulette-view">Roulette</button>
+        <button class="nav__tab" data-view="manage-view">Manage</button>
+      </div>
+    </nav>
+
+    <!-- ====== Roulette View ====== -->
+    <section id="roulette-view" class="view active">
+
+      <!-- Tag filters -->
+      <div class="filter-bar">
+        <div class="filter-bar__label">Filter by tag</div>
+        <div class="filter-bar__chips" id="filter-chips"></div>
+      </div>
+
+      <!-- Spin area -->
+      <div class="spin-area">
+        <div class="spin-display">
+          <div class="spin-display__text" id="spin-text">Press Spin!</div>
+        </div>
+        <button class="btn-spin" id="btn-spin">🎲 Spin!</button>
+      </div>
+
+      <!-- Result -->
+      <div class="result-card" id="result-card">
+        <div class="result-card__heading">Today you're eating at</div>
+        <div class="result-card__name" id="result-name"></div>
+        <div class="result-card__tags" id="result-tags"></div>
+      </div>
+
+      <!-- History -->
+      <div class="history">
+        <div class="history__title">Recent picks</div>
+        <ul class="history__list" id="history-list"></ul>
+      </div>
+    </section>
+
+    <!-- ====== Manage View ====== -->
+    <section id="manage-view" class="view">
+      <div class="manage-header">
+        <input class="search-input" id="search-input" type="text" placeholder="Search restaurants or tags…">
+        <button class="btn-add" id="btn-add">+ Add</button>
+      </div>
+      <div class="resto-list" id="resto-list"></div>
+    </section>
+
+  </div>
+
+  <!-- ====== Add/Edit Modal ====== -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+      <h2 class="modal__title" id="modal-title">Add Restaurant</h2>
+      <div class="form-group">
+        <label for="modal-name">Name</label>
+        <input type="text" id="modal-name" placeholder="e.g. Warung Nasi Uduk">
+      </div>
+      <div class="form-group">
+        <label for="modal-tags">Tags</label>
+        <input type="text" id="modal-tags" placeholder="e.g. indonesian, fried rice, budget">
+        <div class="hint">Comma-separated</div>
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--ghost" id="modal-cancel">Cancel</button>
+        <button class="btn btn--primary" id="modal-save">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====== Confirm Delete ====== -->
+  <div class="confirm-overlay" id="confirm-overlay">
+    <div class="confirm-box">
+      <p id="confirm-msg">Delete this restaurant?</p>
+      <div class="confirm-box__actions">
+        <button class="btn btn--ghost" id="confirm-no">Cancel</button>
+        <button class="btn btn--danger" id="confirm-yes">Delete</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
